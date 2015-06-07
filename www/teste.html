@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Pic Nic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <style>
+        /*this block should go in the styles.css file*/
+        .ui-panel-inner {
+            padding:0px; /*make the buttons flush edge to edge*/
+           
+
+        }
+        .ui-btn-up-a{
+        background:#A52A2A;
+        }
+       
+        .ui-controlgroup {
+            margin:0; /*make the buttons flush to the top*/
+        
+        }
+        #header {
+            height:54px;
+            background:#A52A2A;
+        }
+        
+        #bars-button {
+            margin:7px;
+            background:#A52A2A;
+        }
+        .ui-body-a{
+           
+            
+            border:0px solid #fff;
+            background-image:url(img/screen-xhdpi-portrait.png);
+           
+        }
+        .ui-btn-hover-a{
+
+            border:1px solid #000;
+            background:#B22222;
+            font-weight:700;
+            color:#fff;
+            text-shadow:0 1px 0 #111;
+            background-image:-webkit-gradient(linear,left top,left bottom,from(#555),to(#383838));
+            background-image:-webkit-linear-gradient(#555,#383838);
+            background-image:-moz-linear-gradient(#555,#383838);
+            background-image:-ms-linear-gradient(#555,#383838);
+            background-image:-o-linear-gradient(#555,#383838);
+            background-image:linear-gradient(#555,#383838)
+        }
+
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a" >
+
+    <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="left">
+        <div data-role="controlgroup" data-corners="false">
+            <a href="#" data-role="button">Lanchonete</a>
+            <a href="#" data-role="button">Sorveteria</a>
+            <a href="#" data-role="button">Brinquedos</a>
+            <a href="#" data-role="button">Sobre a Pic Nic</a>
+        </div>
+    </div>
+
+    <div id="header" data-role="header" data-theme="b">
+        <a id="bars-button" data-icon="bars"  class="ui-btn-left" style="margin-top:10px;" href="#navpanel">Menu</a>
+    </div>
+</div>
+</body>
+</html>
