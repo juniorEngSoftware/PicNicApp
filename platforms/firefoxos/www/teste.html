@@ -4,66 +4,161 @@
     <meta charset="utf-8">
     <title>Pic Nic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style>
         /*this block should go in the styles.css file*/
         .ui-panel-inner {
             padding:0px; /*make the buttons flush edge to edge*/
-           
-
         }
-        .ui-btn-up-a{
+        .ui-btn-a{
         background:#A52A2A;
         }
        
         .ui-controlgroup {
             margin:0; /*make the buttons flush to the top*/
+            
         
         }
+        .ui-page-theme-b {
+    
+            font-weight: bold;
+            background-color: #19198D;
+
+        }
         #header {
+            
             height:54px;
             background:#A52A2A;
         }
         
         #bars-button {
             margin:7px;
+            
             background:#A52A2A;
         }
-        .ui-body-a{
-           
+        .ui-body-b{
             
             border:0px solid #fff;
-             background-size: cover;	 
-            background-image:url(img/screen-hdpi-portrait.png);
-           
+            background-size: cover;	 
+            background: #19198D; 
         }
-        .ui-btn-hover-a{
-
-            border:1px solid #000;
-            background:#B22222;
-           
+       .ui-bar-f {
+           color: red;
+           background-color: yellow;
+       }
+        .ui-page-theme-a{
+         color: brown;   
         }
 
     </style>
+
 </head>
 <body>
-
-<div data-role="page" id="home" data-theme="a" >
-
-    <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="left">
-        <div data-role="controlgroup" data-corners="false">
-            <a href="#" data-role="button">Lanchonete</a>
-            <a href="#" data-role="button">Sorveteria</a>
-            <a href="#" data-role="button">Brinquedos</a>
-            <a href="#" data-role="button">Sobre a Pic Nic</a>
+ 
+<div data-role="page" id="home" data-theme="b">
+     <div data-role="header" data-theme="b">
+    <h1>Pic Nic</h1>
+    </div>
+    <div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="left">
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
+             <div data-role="header" data-theme="b">
+                 <h1>Pic Nic</h1>
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
+            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
+            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
+            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
         </div>
     </div>
-
     <div id="header" data-role="header" data-theme="b">
-        <a id="bars-button" data-icon="bars"  class="ui-btn-left" style="margin-top:10px;" href="#navpanel">Menu</a>
+        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel">Menu</a>
     </div>
-</div>
+    <div data-role="main" class="ui-content">
+        <p>Pic Nic Sorveteria, Lanches e Brinquedos.</p>
+    </div>
+    </div>
+    
+    
+    <div data-role="page" id="lanchonete" data-theme="b">
+     <div data-role="header" data-theme="b">
+    <h1>Lanches Pic Nic</h1>
+    </div>
+    <div data-role="panel" id="navpanel1" data-theme="b" data-display="overlay" data-position="left">
+      
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
+             <div data-role="header" data-theme="b">
+    <h1>Pic Nic</h1>
+
+    </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
+            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
+            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
+            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel1">Menu</a>
+         <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
+    </div>
+         <div data-role="main" class="ui-content">
+        <p>Cardápio da Lanchonete Pic Nic.</p>
+    </div>
+    </div>
+    
+      <div data-role="page" id="sorveteria" data-theme="b">
+     <div data-role="header" data-theme="b">
+    <h1>Sorveteria Pic Nic</h1>
+    </div>
+    <div data-role="panel" id="navpanel2" data-theme="b" data-display="overlay" data-position="left">
+      
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
+             <div data-role="header" data-theme="b">
+    <h1>Pic Nic</h1>
+
+    </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
+            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
+            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
+            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel2">Menu</a>
+         <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
+    </div>
+           <div data-role="main" class="ui-content">
+        <p> Sorveteria Pic Nic.</p>
+    </div>
+    </div>
+    
+     <div data-role="page" id="brinquedos" data-theme="b">
+     <div data-role="header" data-theme="b">
+    <h1>Brinquedoteca Pic Nic</h1>
+    </div>
+    <div data-role="panel" id="navpanel3" data-theme="b" data-display="overlay" data-position="left">
+      
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
+             <div data-role="header" data-theme="b">
+    <h1>Pic Nic</h1>
+
+    </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
+            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
+            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
+            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel3">Menu</a>
+        <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
+    </div>
+           <div data-role="main" class="ui-content">
+        <p>Espaço Brinquedoteca Pic Nic.</p>
+    </div>
+    </div>
+    
+ 
 </body>
 </html>
