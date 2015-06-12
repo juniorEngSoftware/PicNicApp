@@ -4,161 +4,523 @@
     <meta charset="utf-8">
     <title>Pic Nic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <style>
+        th {
+        border-bottom: 1px solid #d6d6d6;
+         
+        }
+
+        tr:nth-child(even) {
+        background:#3333A2;
+        }
+
         /*this block should go in the styles.css file*/
         .ui-panel-inner {
-            padding:0px; /*make the buttons flush edge to edge*/
+        padding:0px; /*make the buttons flush edge to edge*/
         }
         .ui-btn-a{
         background:#A52A2A;
         }
-       
+
         .ui-controlgroup {
-            margin:0; /*make the buttons flush to the top*/
-            
-        
+        margin:0; /*make the buttons flush to the top*/
+
+
         }
         .ui-page-theme-b {
-    
-            font-weight: bold;
-            background-color: #19198D;
+
+        font-weight: bold;
+        background-color: #19198D;
 
         }
         #header {
-            
-            height:54px;
-            background:#A52A2A;
+
+        height:54px;
+        background:#A52A2A;
         }
-        
+
         #bars-button {
-            margin:7px;
-            
-            background:#A52A2A;
+        margin:7px;
+
+        background:#A52A2A;
         }
         .ui-body-b{
-            
-            border:0px solid #fff;
-            background-size: cover;	 
-            background: #19198D; 
+
+        border:0px solid #fff;
+        background-size: cover;
+        background: #19198D;
         }
-       .ui-bar-f {
-           color: red;
-           background-color: yellow;
-       }
+        .ui-bar-f {
+        color: red;
+        background-color: yellow;
+        }
         .ui-page-theme-a{
-         color: brown;   
+        color: brown;
         }
 
     </style>
-
 </head>
 <body>
- 
+
 <div data-role="page" id="home" data-theme="b">
-     <div data-role="header" data-theme="b">
-    <h1>Pic Nic</h1>
+    <div data-role="header" data-theme="b">
+        <h1>Pic Nic</h1>
     </div>
     <div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="left">
-        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
-             <div data-role="header" data-theme="b">
-                 <h1>Pic Nic</h1>
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
             </div>
-            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
-            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
-            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
-            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
         </div>
     </div>
     <div id="header" data-role="header" data-theme="b">
-        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel">Menu</a>
+        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true"
+           class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+           style="margin-top:6px;" href="#navpanel">Menu</a>
+    
+    </div>
+   
+</div>
+
+
+<div data-role="page" id="lanchonete" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Lanches</h1>
+    </div>
+    <div data-role="panel" id="navpanel1" data-theme="b" data-display="overlay"
+         data-position="left">
+
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
+
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+        
+            <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" style="margin-top:6px;"
+               class="ui-btn ui-btn-inline ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+               href="#navpanel1">Menu</a>
+            <a  id="bars-button" data-icon="home"
+               data-iconshadow="true" data-shadow="true" style="margin-top:6px;"
+               class="ui-btn ui-btn-inline ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right"
+               href="#home" data-transition="none">Início</a>
+             
+    </div>
+       <div data-role="main" class="ui-content">
+        
+                    <p>Cardápio da Lanchonete Pic Nic.</p>
+                </div>
+         <div data-role="main" class="ui-content">
+        <table data-role="table" class="ui-responsive ui-shadow">
+            <thead>
+            <tr>
+                <th>Cód.:</th>
+                <th>descrição:</th>
+                <th>Valor:</th>    
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>10</td>
+                <td>CHEESE PIC NIC - PÃO P/HAMBURGUER, FILÉ, OVO, QUEIJO, PRESUNTO, MILHO, BATATA PALHA, BACON, CATUPIRY, ALFACE E TOMATE.</td>
+                <td>R$10,00</td>
+                
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>CHEESE FILÉ - PÃO P/HAMBURGUER, FILÉ, QUEIJO, PRESUNTO, OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$8,00</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>CHEESE FRANGO - PÃO P/HAMBURGUER, FILÉ DE FRANGO(DESFIADO), QUEIJO, MILHO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$7,00</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>CHEESE FRANGO ESPECIAL - PÃO P/HAMBURGUER, FILÉ DE FRANGO(DESFIADO), SHEDDAR, OVO, CATUPIRY, MILHO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$9,00</td>
+            </tr>
+                <tr>
+                <td>15</td>
+                <td>CHEESE TUDO - PÃO P/HAMBURGUER, HAMBURGUER, PRESUNTO, QUEIJO, OVO, BACON, CALABRESA, SALSICHA, MILHO VERDE, ERV., BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$9,00</td>
+            </tr>
+                <tr>
+                <td>16</td>
+                <td>CHEESE BAGUNÇA - PÃO P/HAMBURGUER, HAMBURGUER, PRESUNTO, QUEIJO, OVO, BACON, MILHO VERDE, ERV., BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$8,00</td>
+            </tr>
+                <tr>
+                <td>17</td>
+                <td>CHEESE SALADA - PÃO P/HAMBURGUER, HAMBURGUER, PRESUNTO, QUEIJO, OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$5,00</td>
+            </tr>
+                <tr>
+                <td>18</td>
+                <td>CHEESE SALADA ESPECIAL - PÃO P/HAMBURGUER, HAMBURGUER, PRESUNTO, QUEIJO, OVO, BATATA PALHA, MILHO, ERVILHA, ALFACE E TOMATE.</td>
+                <td>R$6,00</td>
+            </tr>
+                <tr>
+                <td>19</td>
+                <td>CHEESE SALADA DUPLO - PÃO P/HAMBURGUER, 2 HAMBURGUER, 2 PRESUNTO, 2 QUEIJO, 2 OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$9,00</td>
+            </tr>
+                <tr>
+                <td>20</td>
+                <td>CHEESE BACON - PÃO P/HAMBURGUER, BACON, PRESUNTO, QUEIJO, OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$ 6,00</td>
+            </tr>
+                <tr>
+                <td>21</td>
+                <td>CHEESE CALABRESA - PÃO P/HAMBURGUER, CALABRESA, PRESUNTO, QUEIJO, OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$7,00</td>
+            </tr>
+                <tr>
+                <td>22</td>
+                <td>CHEESE BURGUER - PÃO P/HAMBURGUER, HAMBURGUER, QUEIJO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$5,00</td>
+            </tr>
+                <tr>
+                <td>23</td>
+                <td>CHEESE AMERICANO - PÃO P/HAMBURGUER, PRESUNTO, QUEIJO, OVO, BATATA PALHA, ALFACE E TOMATE.</td>
+                <td>R$4,50</td>
+            </tr>
+                <tr>
+                <td>24</td>
+                <td>CHEESE BAURU - PÃO P/HAMBURGUER, PRESUNTO, QUEIJO, ALFACE E TOMATE.</td>
+                <td>R$4,00</td>
+            </tr>
+                <tr>
+                <td>25</td>
+                <td>MISTO QUENTE - PÃO P/HAMBURGUER, PRESUNTO, QUEIJO.</td>
+                <td>R$2,50</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+   
+</div>
+
+<div data-role="page" id="suco" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Sucos</h1>
+    </div>
+    <div data-role="panel" id="navpanel2" data-theme="b" data-display="overlay"
+         data-position="left">
+
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
+
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+       
+            <a id="bars-button" data-icon="grid" style="margin-top:6px;" data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+               href="#navpanel2">Menu</a>
+            <a id="bars-button" data-icon="home"
+               data-iconshadow="true" data-shadow="true" style="margin-top:6px;"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right"
+               href="#home" data-transition="none">Início</a>
+         
+       
     </div>
     <div data-role="main" class="ui-content">
-        <p>Pic Nic Sorveteria, Lanches e Brinquedos.</p>
+        <p> Tabela de preço dos sucos.</p>
     </div>
-    </div>
-    
-    
-    <div data-role="page" id="lanchonete" data-theme="b">
-     <div data-role="header" data-theme="b">
-    <h1>Lanches Pic Nic</h1>
-    </div>
-    <div data-role="panel" id="navpanel1" data-theme="b" data-display="overlay" data-position="left">
-      
-        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
-             <div data-role="header" data-theme="b">
-    <h1>Pic Nic</h1>
+     <div data-role="main" class="ui-content">
+        <table data-role="table" class="ui-responsive ui-shadow">
+            <thead>
+            <tr>
+                <th>Cód.:</th>
+                <th>Suco C/Água, copo 400ml:</th>
+                <th>Valor:</th>    
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>26</td>
+                <td>ACEROLA</td>
+                <td>R$2,50</td>
+                
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>GOIABA</td>
+                <td>R$2,50</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>CUPUAÇU</td>
+                <td>R$2,50</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>MARACUJÁ</td>
+                <td>R$2,50</td>
+            </tr>
+                 <tr>
+                <td>  </td>
+                <td>ADICIONAL LEITE</td>
+                <td>R$1,50</td>
+            </tr>
 
+            </tbody>
+        </table>
     </div>
-            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
-            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
-            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
-            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+    
+</div>
+
+<div data-role="page" id="refrigerante" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Refrigerantes</h1>
+    </div>
+    <div data-role="panel" id="navpanel3" data-theme="b" data-display="overlay"
+         data-position="left">
+
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
+
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
         </div>
     </div>
     <div id="header" data-role="header" data-theme="b">
-        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel1">Menu</a>
-         <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
+       
+            <a id="bars-button" style="margin-top:6px;" data-icon="grid" data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+               href="#navpanel3">Menu</a>
+            <a  id="bars-button" data-icon="home" style="margin-top:6px;"
+               data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right"
+               href="#home" data-transition="none">Início</a>
+         
+       
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>Tabela de preços das bebidas.</p>
+    </div>
+     <div data-role="main" class="ui-content">
+        <table data-role="table" class="ui-responsive ui-shadow">
+            <thead>
+            <tr>
+                <th>Cód.:</th>
+                <th>Refrigerantes/Água:</th>
+                <th>Valor:</th>    
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>40</td>
+                <td>COCA-COLA PET 1L</td>
+                <td>R$5,00</td>
+                
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>COCA-COLA PET 1,5L</td>
+                <td>R$6,50</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>COCA-COLA PET 2L</td>
+                <td>R$7,50</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>FANTA LARANJA 1.5L</td>
+                <td>R$6,50</td>
+            </tr>
+                 <tr>
+                <td>39</td>
+                <td>FANTA LARANJA 2L</td>
+                <td>R$7,50</td>
+            </tr>
+                 <tr>
+                <td>32</td>
+                <td>COCA-COLA lata 350ml</td>
+                <td>R$3,00</td>
+            </tr>
+                 <tr>
+                <td>33</td>
+                <td>DIDYO 500ML</td>
+                <td>R$2,00</td>
+            </tr>
+                 <tr>
+                <td>34</td>
+                <td>DYDYO 2L</td>
+                <td>R$4,00</td>
+            </tr>
+                 <tr>
+                <td>37</td>
+                <td>ÁGUA KAIARY s/gás 500ml</td>
+                <td>R$2,00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+    <div data-role="page" id="opcionais" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Opcionais</h1>
+    </div>
+    <div data-role="panel" id="navpanel4" data-theme="b" data-display="overlay"
+         data-position="left">
+
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
+
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
+        </div>
+    </div>
+    <div id="header" data-role="header" data-theme="b">
+       
+            <a id="bars-button" style="margin-top:6px;" data-icon="grid" data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+               href="#navpanel4">Menu</a>
+            <a  id="bars-button" data-icon="home" style="margin-top:6px;"
+               data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right"
+               href="#home" data-transition="none">Início</a>
+         
+       
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>Tabela de preços opcionais.</p>
     </div>
          <div data-role="main" class="ui-content">
-        <p>Cardápio da Lanchonete Pic Nic.</p>
+             <div data-role="header" data-theme="a">
+               <p>Todos os sanduíches a serem montados, serão cobrados a partir do preço do misto quente.</p>
+            </div>
+        <table data-role="table" class="ui-responsive ui-shadow">
+            <thead>
+            <tr>
+                <th>Descrição:</th>
+                <th>Valor:</th>    
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FILÉ BOI OU FRANGO cada</td>
+                <td>R$3,00</td>
+            </tr>
+            <tr>
+                <td>CALABRESA OU BACON cada</td>
+                <td>R$2,00</td>
+            </tr>
+            <tr>
+                <td>HAMBURGUER OU OVO cada</td>
+                <td>R$1,00</td>
+            </tr>
+            <tr>   
+                <td>QUEIJO OU PRESUNTO cada</td>
+                <td>R$1,00</td>
+            </tr>
+            <tr>
+                <td>CHEDDAR OU CATUPIRY cada</td>
+                <td>R$1,00</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-    </div>
+</div>
     
-      <div data-role="page" id="sorveteria" data-theme="b">
-     <div data-role="header" data-theme="b">
-    <h1>Sorveteria Pic Nic</h1>
+     <div data-role="page" id="park" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Park Pic Nic</h1>
     </div>
-    <div data-role="panel" id="navpanel2" data-theme="b" data-display="overlay" data-position="left">
-      
-        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
-             <div data-role="header" data-theme="b">
-    <h1>Pic Nic</h1>
+    <div data-role="panel" id="navpanel5" data-theme="b" data-display="overlay"
+         data-position="left">
 
-    </div>
-            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
-            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
-            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
-            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
+        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow"
+             data-display="push" data-position-fixed="true">
+            <div data-role="header" data-theme="b">
+                <h1>Pic Nic</h1>
+
+            </div>
+            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="none">Lanchonete</a>
+            <a href="#suco" data-role="button" data-rel="close" data-transition="none">Sucos</a>
+            <a href="#refrigerante" data-role="button" data-rel="close" data-transition="none">Refrigerantes</a>
+            <a href="#opcionais" data-role="button" data-rel="close" data-transition="none">Opcionais</a>
+            <a href="#park" data-role="button" data-rel="close" data-transition="none">Park Pic Nic</a>
         </div>
     </div>
     <div id="header" data-role="header" data-theme="b">
-        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel2">Menu</a>
-         <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
+       
+            <a id="bars-button" style="margin-top:6px;" data-icon="grid" data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left"
+               href="#navpanel5">Menu</a>
+            <a  id="bars-button" data-icon="home" style="margin-top:6px;"
+               data-iconshadow="true" data-shadow="true"
+               class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right"
+               href="#home" data-transition="none">Início</a>
+         
+       
     </div>
-           <div data-role="main" class="ui-content">
-        <p> Sorveteria Pic Nic.</p>
+    <div data-role="main" class="ui-content">
+        <p>Parque Pic Nic</p>
     </div>
+        <div data-role="main" class="ui-content">
+        <table data-role="table" class="ui-responsive ui-shadow">
+            <thead>
+            <tr>
+                <th>PARK PIC NIC taxa</th>
+                <th>R$10,00</th>    
+            </tr>
+            </thead>
+             <thead>
+            <tr>
+                <th>PARK PIC NIC taxa</th>
+            </tr>
+            </thead>
+          
+        </table>
     </div>
+</div>
     
-     <div data-role="page" id="brinquedos" data-theme="b">
-     <div data-role="header" data-theme="b">
-    <h1>Brinquedoteca Pic Nic</h1>
-    </div>
-    <div data-role="panel" id="navpanel3" data-theme="b" data-display="overlay" data-position="left">
-      
-        <div data-role="controlgroup" data-corners="true" calss="ui-overlay-shadow" data-display="push"  data-position-fixed="true">
-             <div data-role="header" data-theme="b">
-    <h1>Pic Nic</h1>
 
-    </div>
-            <a href="#lanchonete" data-role="button" data-rel="close" data-transition="slidefade">Lanchonete</a>
-            <a href="#sorveteria" data-role="button" data-rel="close" data-transition="slidefade">Sorveteria</a>
-            <a href="#brinquedos" data-role="button" data-rel="close" data-transition="slidefade">Brinquedos</a>
-            <a href="#" data-role="button" data-rel="close" data-transition="slidefade">Sobre a Pic Nic</a>
-        </div>
-    </div>
-    <div id="header" data-role="header" data-theme="b">
-        <a id="bars-button" data-icon="grid" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-bars ui-btn-icon-left" style="margin-top:6px;" href="#navpanel3">Menu</a>
-        <a id="bars-button" data-icon="home" data-iconshadow="true" data-shadow="true" class="ui-btn ui-corner-all ui-overlay-shadow ui-icon-home ui-btn-icon-right" style="margin-top:6px;" href="#home" data-transition="slidefade">Início</a>
-    </div>
-           <div data-role="main" class="ui-content">
-        <p>Espaço Brinquedoteca Pic Nic.</p>
-    </div>
-    </div>
-    
- 
+
 </body>
 </html>
