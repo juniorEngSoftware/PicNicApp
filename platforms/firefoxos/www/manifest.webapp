@@ -5,9 +5,9 @@
     ],
     "version": "0.0.1",
     "name": "Pic Nic",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "Aplicação para uma Lanchonente, fornecimento dos serviços do empreendimento.",
     "developer": {
-        "name": "Apache Cordova Team",
+        "name": "Junior Lobato",
         "url": "http://cordova.io"
     },
     "icons": {}

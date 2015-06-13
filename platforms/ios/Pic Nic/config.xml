@@ -14,14 +14,18 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>Pic Nic</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+       Aplicação para uma Lanchonente, fornecimento dos serviços do empreendimento.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="mcjuniorhta@gmail.com" href="http://cordova.io">
+        Junior Lobato
     </author>
     <content src="teste.html" />
     <access origin="*" />
@@ -31,8 +35,10 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
+    <preference name="loadUrlTimeoutValue" value="5000" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <icon src="icon.png" />
 </widget>
