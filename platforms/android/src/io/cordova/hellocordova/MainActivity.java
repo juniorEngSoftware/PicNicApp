@@ -19,7 +19,7 @@ public class MainActivity extends CordovaActivity {
 
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+        new AlertDialog.Builder(this).setIcon(R.drawable.icon_alert_dialog).setTitle("Pic Nic Lanche, Sorvete e Brinquedo")
                 .setMessage("Deseja sair?")
                 .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
